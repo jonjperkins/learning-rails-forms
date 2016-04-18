@@ -1,1 +1,13 @@
-<h1>hello world</h1>
+<form action="/users" method="POST" accept-charset="UTF-8">
+    Sign up below!<br>
+    <label for="username">Username</label><br>
+    <input type="text" name="user[username]"><br>
+    <label for="email">E-mail</label><br>
+    <input type="text" name="user[email]"><br>
+    <label for="password">Password</label><br>
+    <input type="password" name="user[password]"><br>
+    <input type="submit">
+    <input type="hidden" name="authenticity_token"
+         value="<%= form_authenticity_token %>">
+    
+</form>
